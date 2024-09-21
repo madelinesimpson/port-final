@@ -1,38 +1,507 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Fustat:wght@200..800&family=Ramaraja&display=swap');
+
+
+@media screen and (max-width: 1920px) {
+  body {
+    overscroll-behavior-y: none;
+    overscroll-behavior-y: none;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    font-family: "Fustat", sans-serif;
+    width: 100vw;
+    background-image: linear-gradient(rgb(53, 94, 59), rgb(30, 52, 33));
+  }
+
+  .division {
+    min-height: 100vh;
+    max-width: 100vw;
+    width: 1156px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .profile {
+    height: 100vh;
+    width: 528px;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    display: flex;
+    color: rgb(255, 255, 240);
+    flex-direction: column;
+    z-index: 5;
+  }
+
+  .profile-header {
+    padding-top: 100px;
+    grid-row: 2;
+    height: 180px;
+    align-content: center;
+    vertical-align: center;
+    display: flex;
+  }
+
+  .profile-header-text {
+    padding-left: 20px;
+    display: block;
+  }
+
+  .Name {
+    margin-top: 8px;
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .headshot {
+    max-height: 180px;
+    min-width: 180px;
+    border-radius: 95px;
+    box-shadow:2px 2px rgb(38, 66, 42);
+  }
+
+  .Description {
+    margin-top: -20px;
+    font-weight: 300;
+    font-size: 17px;
+  }
+
+  .nav-container {
+    margin-left: 20px;
+    height: 150px;
+    display: flex;
+    align-items: center; 
+  }
+
+  .nav {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .nav-item {
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 240, 0.3);
+    position: relative;
+    text-transform: uppercase;
+    padding-left: 60px;
+    transition: 1s;
+  }
+
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    margin-left: 40px;
+    background-color: rgb(255, 255, 240, 0.3);
+  }
+
+  .nav-item.active {
+    color: rgb(255, 255, 240); 
+    padding-left: 100px;
+    transition: 1s;
+  }
+
+  .nav-item.active::before {
+    background-color: rgb(255, 255, 240);
+    width: 80px;
+    transition: 1s;
+  }
+  .nav-item:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 240);
+    padding-left: 100px;
+    transition: 0.5s;
+  }
+
+  .nav-item:hover::before {
+    cursor: pointer;
+    background-color: rgb(255, 255, 240);
+    width: 80px;
+    transition: 0.5s;
+  }
+
+  .content {
+    width: 528px;
+    height: 100vh; /* Ensure content takes up full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    color: rgb(255, 255, 240);
+    scrollbar-width: none;
+  }
+
+  .education-content {
+    margin-top: 100px;
+  }
+
+  .education-block {
+    height: 100%;
+    z-index: 2;
+    margin-bottom: 20px;
+  }
+
+  .education-block:hover {
+    filter: opacity(1.5);
+  }
+
+  .edu-div{
+    display: flex;
+  }
+
+  .edu-date {
+    font-size: 12px;
+    min-width: 170px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 240, 0.8);
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  .edu-date > p{
+    margin-top: 2px;
+  }
+
+  .edu-desc {
+    display: block;
+    margin-top: 0px;
+  }
+
+  .edu-desc > h4 {
+    font-weight: 400;
+    margin-top: 0;
+  }
+
+  .edu-desc > p {
+    font-size: 12px;
+    color: rgb(255, 255, 240, 0.8);
+  }
+  .edu-bubble {
+    display: flex;
+    margin-left: -2px;
+  }
+
+  .edu-bubble > p {
+    border: rgb(255, 255, 240, 0.8);
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    background:rgb(30, 52, 33);
+    color: rgb(255, 255, 240, 1.0);
+    font-size: 10px;
+    margin: 2px;
+    font-weight: 500;
+  }
+
+  .exp-div {
+    display: flex;
+    padding: 10px;
+    margin-left: -5px;
+    color: rgb(255, 255, 240, 1.0);
+  }
+
+  .exp-date {
+    font-size: 12px;
+    min-width: 170px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 240, 0.8);
+    position: relative;
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-top: -9px;
+  }
+
+  .header-link {
+    display: block;
+    width: 100%;
+  }
+
+  .header-img {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-img > h4 {
+    font-weight: 400;
+    margin-top: 0;
+  }
+
+  .header-img > img {
+    margin-top: 2px;
+    height: 16px;
+    filter: invert(94%) sepia(16%) saturate(365%) hue-rotate(335deg) brightness(108%) contrast(105%);
+  }
+
+  .header-link > h5 {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+
+  .experience-block {
+    height: 100%;
+    z-index: 2;
+    border-radius: 10px;
+  }
+
+  .experience-block:hover {
+    cursor: pointer;
+    background-color:rgb(30, 52, 33);
+    transition: 0.5s;
+
+  }
+
+  .experience-block > a {
+    text-decoration: none;
+  }
+
+  .skills-content {
+    margin-bottom: 100px;
+  }
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media screen and (max-width: 1200px) {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .division {
+    gap: 50px;
+  }
+
+  .profile-header-text {
+    padding-left: 20px;
+    display: block;
+  }
+
+  .Name {
+    font-size: 30px;
+  }
+
+  .headshot {
+    max-height: 150px;
+    min-width: 150px;
+    border-radius: 75px;
+    box-shadow:2px 2px rgb(38, 66, 42);
+  }
+
+  .Description {
+    font-size: 15px;
+  }
+
+  .nav-container {
+    margin-top: -20px;
+  }
+
+  .edu-bubble {
+    flex-wrap: wrap;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 900px) {
+
+  .container {
+    display: block;
+    width: 100vw;
+  }
+  .division {
+    display: block;
+    width: 100%;
+  }
+  .nav-container {
+    display: none;
+  }
+
+  .headshot {
+    max-height: 150px;
+    min-width: 150px;
+    border-radius: 75px;
+    box-shadow:2px 2px rgb(38, 66, 42);
+  }
+
+  .Name {
+    margin-top: 20px;
+  }
+
+  .profile {
+    position: static;
+    height: 300px;
+    margin-left: 5vw;
+  }
+
+  .content {
+    margin-top: -120px;
+    width: 85vw;
+    height: 100%;
+    margin-left: 5vw;
+  }
+
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 600px) {
+
+  .container {
+    display: block;
+    width: 100vw;
+  }
+  .division {
+    display: block;
+    width: 100%;
+  }
+  .nav-container {
+    display: none;
+  }
+
+  .Name {
+    font-size: 25px;
+    margin-top: 0px;
+  }
+
+  .Description {
+    margin-top: -5px;
+    font-size: 15px;
+    width: 250px;
+  }
+
+  .headshot {
+    margin-top: 0px;
+    max-height: 120px;
+    min-width: 120px;
+    border-radius: 56px;
+    box-shadow:2px 2px rgb(38, 66, 42);
+  }
+
+  .profile {
+    width: 100vw;
+    height: 300px;
+    margin-left: 3vw;
+  }
+
+  .content {
+    margin-top: -90px;
+    width: 94vw;
+    height: 100%;
+    margin-left: 3vw;
+  }
+
+  .education-content {
+    margin-top: 100px;
+  }
+
+  .education-content > h3 {
+    font-size: 15px;
+  }
+
+  .experience-content > h3 {
+    font-size: 15px;
+  }
+
+  .skills-content > h3 {
+    font-size: 15px;
+  }
+
+  .edu-date {
+    font-size: 10px;
+    min-width: 130px;
+  }
+
+  .exp-date {
+    margin-left: 0px;
+    margin-top: -6px;
+    font-size: 10px;
+    min-width: 130px;
+  }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media screen and (max-width: 390px) {
+ 
+
+  .container {
+    display: block;
+    width: 100vw;
   }
-  to {
-    transform: rotate(360deg);
+  .division {
+    display: block;
+    width: 100%;
   }
+  .nav-container {
+    display: none;
+  }
+
+  .Name {
+    font-size: 25px;
+    margin-top: 0px;
+  }
+
+  .Description {
+    margin-top: -5px;
+    font-size: 13px;
+    width: 200px;
+  }
+
+  .headshot {
+    margin-top: 0px;
+    max-height: 120px;
+    min-width: 120px;
+    border-radius: 56px;
+    box-shadow:2px 2px rgb(38, 66, 42);
+  }
+
+  .profile {
+    width: 100vw;
+    height: 300px;
+    margin-left: 3vw;
+  }
+
+  .content {
+    margin-top: -90px;
+    width: 94vw;
+    height: 100%;
+    margin-left: 3vw;
+  }
+
+  .education-content {
+    margin-top: 100px;
+  }
+
+  .education-content > h3 {
+    font-size: 15px;
+  }
+
+  .experience-content > h3 {
+    font-size: 15px;
+  }
+
+  .skills-content > h3 {
+    font-size: 15px;
+  }
+
+  .edu-date {
+    font-size: 10px;
+    min-width: 130px;
+  }
+
+  .exp-date {
+    margin-left: 0px;
+    margin-top: -6px;
+    font-size: 10px;
+    min-width: 130px;
+  }
+
 }
