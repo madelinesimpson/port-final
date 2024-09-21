@@ -360,6 +360,11 @@
 
 @media screen and (max-width: 600px) {
 
+  .experience-block:hover {
+    cursor: pointer;
+
+  }
+
   body {
     overscroll-behavior-y: none;
   }
