@@ -54,7 +54,7 @@ function Home () {
                         <img className="headshot" src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/headshot.jpeg"></img>
                         <div class="profile-header-text">
                             <h1 className="Name">Madeline Simpson</h1>
-                            <p className="Description">Pursuing a BS in Computational Media <br></br>@  Georgia Tech (Concentrations in Film and Media)<br></br>Contact: msimpson63@gatech.edu</p>
+                            <p className="Description">Pursuing a BS in Computational Media @ Georgia Tech (Concentrations in Film and Media)<br></br>Contact: msimpson63@gatech.edu</p>
                         </div>
                     </div>
                     <div className="nav-container">
@@ -324,11 +324,31 @@ function Home () {
                                                 </div>
                                                 <h5>Lead Singer & Guitarist</h5>
                                             </div>
-                                        <p>Write and record music, perform shows around Atlanta, and manage the social media for my band. Our music is out on all streaming platforms, and you can find some of the promotional videos I've created on our Instagram: @TheminUniform</p>
+                                        <p>Write and record music, perform shows around Atlanta, and manage the social media for my band. Our music is out on all streaming platforms, and you can find some of the promotional videos I've created on our Instagram: @TheminUniform. I built the stratocaster that I play daily and at every show, and I love the technical aspects of guitars.</p>
                                         <div className="edu-bubble">
                                             <p>Music</p>
                                             <p>Marketing</p>
                                             <p>Film: Content Creation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="experience-block">
+                            <a href = "https://github.com/madelinesimpson/port-final/tree/main/src/assets/Koda.png" target="_blank">
+                                <div className="exp-div">
+                                    <div className="exp-date">
+                                        <p>MAY 2023- PRESENT</p>
+                                    </div>
+                                    <div className="edu-desc">
+                                            <div className="header-link">
+                                                <div className="header-img">
+                                                    <h4>Koda</h4><img src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/external-link.svg"></img>
+                                                </div>
+                                                <h5>Dog Mom</h5>
+                                            </div>
+                                        <p>Not really a skill or interest, but I take the chance to show him off every chance I get. I became a dog mom to an Australian Shepherd named Koda in May of 2023. Click here to see some pictures.</p>
+                                        <div className="edu-bubble">
                                         </div>
                                     </div>
                                 </div>
@@ -354,6 +374,27 @@ function Home () {
                                     </div>
                                 </div>
                             </a>
+                        </div>
+                        <div className="experience-block">
+                                <div className="exp-div">
+                                    <div className="exp-date">
+                                        <p>2010 - PRESENT</p>
+                                    </div>
+                                    <div className="edu-desc">
+                                            <div className="header-link">
+                                                <div className="header-img">
+                                                    <h4>Video Games</h4>
+                                                </div>
+                                            </div>
+                                        <p>Certainly not a skill but an interest (I am notoriously terrible at video games). Some of my favorite games throughout the years include Minecraft, Skate 3, Super Smash Bros, The Amazing Spiderman 2, Fortnite, and Overwatch. 
+                                            I'm currently obsessing over the Zelda series and just finished Breath of the Wilde (I'm so late I know). I'm very excited to start on Tears of the Kingdom! My middle school years were spent making javascript games, and I participated in the Student Game Developers club at UVA.
+                                            I've always wanted to dive into making a full 3D game but have not found the time yet. </p>
+                                        <div className="edu-bubble">
+                                            <p>Video Games</p>
+                                            <p>Javascript</p>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </section>
                 </div>
