@@ -22,10 +22,12 @@
   .edu-bubble {
     flex-wrap: wrap;
   }
+
   body {
     overscroll-behavior-y: none;
     overscroll-behavior-y: none;
     overflow-x:hidden;
+    height: 100%;
   }
   
   .container {
@@ -33,6 +35,7 @@
     justify-content: center;
     font-family: "Fustat", sans-serif;
     width: 100vw;
+    height: 100%;
     background-image: linear-gradient(rgb(53, 94, 59), rgb(30, 52, 33));
   }
 
@@ -390,6 +393,10 @@
 
   }
 
+  * {
+    overscroll-behavior-y: none;
+  }
+
   .education-block {
     padding: 0px;
     margin-bottom: 30px;
@@ -397,6 +404,8 @@
 
   body {
     overscroll-behavior-y: none;
+    background-color: rgb(53, 94, 59);
+    height: 100%;
   }
 
   .edu-desc {
