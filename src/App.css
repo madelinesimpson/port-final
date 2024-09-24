@@ -23,6 +23,23 @@
     flex-wrap: wrap;
   }
 
+  .Description > a {
+    text-decoration: none;
+    color: rgb(255, 255, 240);
+  }
+
+  .Description > a > img {
+    position: absolute;
+    margin-top: 3.5px;
+    margin-left: 3px;
+    height: 16px;
+    filter: invert(94%) sepia(16%) saturate(365%) hue-rotate(335deg) brightness(108%) contrast(105%);
+  }
+
+  .Description > a:hover {
+    color: rgb(255, 255, 240, 0.8);
+  }
+
   body {
     overscroll-behavior-y: none;
     overscroll-behavior-y: none;

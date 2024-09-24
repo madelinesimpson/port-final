@@ -54,7 +54,7 @@ function Home () {
                         <img className="headshot" src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/headshot.jpeg"></img>
                         <div class="profile-header-text">
                             <h1 className="Name">Madeline Simpson</h1>
-                            <p className="Description">Pursuing a BS in Computational Media @ Georgia Tech (Concentrations in Film and Media)<br></br>Contact: msimpson63@gatech.edu</p>
+                            <p className="Description">Pursuing a BS in Computational Media @ Georgia Tech (Concentrations in Film and Media)<br></br>Contact: msimpson63@gatech.edu,<br></br><a href="https://www.linkedin.com/in/madeline-simpson-286604203/" target="_blank">LinkedIn<img src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/external-link.svg"></img></a></p>
                         </div>
                     </div>
                     <div className="nav-container">
