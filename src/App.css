@@ -359,6 +359,12 @@
 
 @media screen and (max-width: 900px) {
 
+  .experience-block:hover {
+    cursor: pointer;
+    background-color: unset !important;
+
+  }
+
   .container {
     display: block;
     width: 100vw;
@@ -405,14 +411,20 @@
 
 @media screen and (max-width: 600px) {
 
+  .Description > a > img {
+    margin-top: 2px;
+  }
+
   .experience-block:hover {
     cursor: pointer;
+    background-color: unset !important;
 
   }
 
   * {
     overscroll-behavior-y: none;
   }
+
 
   .education-block {
     padding: 0px;
@@ -498,7 +510,7 @@
   }
 
   .content {
-    margin-top: 0px;
+    margin-top: 30px;
     width: 94vw;
     height: 100%;
     margin-left: 3vw;
