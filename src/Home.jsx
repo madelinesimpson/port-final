@@ -183,7 +183,7 @@ function Home () {
                                                 <h5>Student Fellow</h5>
                                             </div>
                                         <p>As a student fellow of the AI Center, I was assigned a computer vision project for a graduate biology student at Emory working with C. Elegan worms. The student came to the center desiring for the worm counting and classification process to be automized with AI.
-                                        My project has saved her countless hours of counting and classifying worms for her work on reproduction evolution.</p>
+                                        I embarked on a semester long project to tackle that problem.</p>
                                         <div className="edu-bubble">
                                             <p>Python</p>
                                             <p>Keras</p>
