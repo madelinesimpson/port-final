@@ -76,7 +76,7 @@ function Home () {
                                 </div>
                                 <div className="edu-desc">
                                     <h4>Georgia Tech (Expected to graduate in May, 2026)</h4>
-                                    <p>3.741 GPA| Zell Miller Scholar | Member of Georgia Tech Musician's Network</p>
+                                    <p>3.741 GPA | Zell Miller Scholar | Member of Georgia Tech Musician's Network</p>
                                     <p>Relevant Coursework: Data Structures and Algorithms (Javascript), Linear Algebra, Multivariable Calculus, Intro to Film, Animation</p>
                                     <div className="edu-bubble">
                                         <p>Java</p>
@@ -93,7 +93,7 @@ function Home () {
                                     <p>MAY 2021 - MAY 2023</p>
                                 </div>
                                 <div className="edu-desc">
-                                    <h4>University of Virginia (BA in Computer Science, Minor in Entrepreneurship)</h4>
+                                    <h4>University of Virginia (Pursued a BA in Computer Science, Minor in Entrepreneurship)</h4>
                                     <p>3.784 GPA | Member of Phi Eta Sigma Honors Society | Division 1 Varsity Soccer Player (May 2021 - May 2022)</p>
                                     <p>Relevant Coursework: Advanced Software Development Methods (Python and Django),
                                         Software Development Methods (Java), Program and Data Representation (C++), Computer Architecture (C), 
