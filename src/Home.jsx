@@ -10,10 +10,11 @@ function Home () {
         const section = document.getElementById(item.toLowerCase());
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
+            window.history.pushState(null, null, `#${item.toLowerCase()}`);
         }
         setActiveItem(item);
     };
-
+    
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -327,7 +328,7 @@ function Home () {
                                                 <h5>Writer, Director, and Editor</h5>
                                             </div>
                                         <p><b>The Emmys - National Student Production Award Winner: Best Director (2021) <br></br><br></br> All American High School Film Festival Nominee: Best Screenplay, Female Rising Star (2020)</b></p>
-                                        <p>Created and utilized my high school's film club, StudioW, to produce a film I had written with my friend, Sam Cohn. With some help from Sam, I casted actors, 
+                                        <p>Created and utilized my high school's film club, StudioW, to produce a film I had written with my friend, Sam Cohn. Casted actors, 
                                             scouted locations, raised funding, sourced equipment, shot listed, directed, operated the camera for, and edited the film in After Effects and Premiere Pro. </p>
                                         <div className="edu-bubble">
                                             <p>Film</p>
@@ -417,7 +418,7 @@ function Home () {
                                                 </div>
                                             </div>
                                         <p>Certainly not a skill but an interest (I am notoriously terrible at video games). Some of my favorite games throughout the years include Minecraft, Skate 3, Super Smash Bros, The Amazing Spiderman 2, Fortnite, and Overwatch. 
-                                            I'm currently obsessing over the Zelda series and just finished Breath of the Wilde (I'm so late I know). I'm very excited to start on Tears of the Kingdom! My middle school years were spent making javascript games, and I participated in the Student Game Developers club at UVA.
+                                            I'm currently obsessing over the Zelda series and just finished Breath of the Wilde (very late). My middle school years were spent making javascript games, and I participated in the Student Game Developers club at UVA.
                                             I've always wanted to dive into making a full 3D game but have not found the time yet. </p>
                                         <div className="edu-bubble">
                                             <p>Video Games</p>

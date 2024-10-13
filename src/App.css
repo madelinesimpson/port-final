@@ -185,7 +185,7 @@
   }
 
   .education-content {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 
   .education-block {
@@ -250,6 +250,10 @@
     margin: 2px;
     font-weight: 500;
   }
+
+  .experience-content {
+    padding-top: 10px;
+  } 
 
   .exp-div {
     display: flex;
@@ -316,7 +320,12 @@
     text-decoration: none;
   }
 
+  .projects-content {
+    padding-top: 10px;
+  } 
+
   .skills-content {
+    padding-top: 10px;
     margin-bottom: 100px;
   }
 
@@ -517,7 +526,7 @@
   }
 
   .education-content {
-    margin-top: 0px;
+    padding-top: 0px;
   }
 
   .education-content > h3 {
@@ -538,6 +547,18 @@
   .skills-content > h3 {
     font-size: 15px;
     margin-left: 0px;
+  }
+
+  .experience-content {
+    margin-top: -10px;
+  }
+
+  .preojcts-content {
+    margin-top: -10px;
+  }
+
+  .skills-content {
+    margin-top: -10px;
   }
 
   .edu-date {
