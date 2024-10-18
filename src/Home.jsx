@@ -323,7 +323,7 @@ function Home () {
                             </a>
                         </div>
                         <div className="experience-block">
-                            <a href = "https://theminuniform.com/epk/" target="_blank">
+                            <a href = "https://linktr.ee/theminuniform?fbclid=PAZXh0bgNhZW0CMTEAAaamh7_9T1gUZtlxUKGm7omEuK8K_u2xVnAHnDUTaM0Q5rzWoJ9spgUNqEY_aem_oFFukku4fEAq4lL-YVuECQ" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>NOV 2023 - PRESENT</p>
