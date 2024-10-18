@@ -23,16 +23,40 @@
     flex-wrap: wrap;
   }
 
-  .Description > a {
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+    height: 25px;
+    padding: 0;
+    margin: 0; 
+  }
+
+  .exp-date > img {
+    border: 1px solid rgb(255, 255, 240);
+    opacity: .95;
+    height: 86px;
+    width: 81%;
+    border-radius: 10px;
+  }
+  
+  .links > a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: rgb(255, 255, 240);
   }
-
-  .Description > a > img {
-    position: absolute;
-    margin-top: 3.5px;
-    margin-left: 3px;
+  
+  .separator {
+    width: 1px;
+    height: 65%; 
+    background-color: white;
+  }
+  
+  .links > a > img {
     height: 16px;
+    margin-left: 2px;
     filter: invert(94%) sepia(16%) saturate(365%) hue-rotate(335deg) brightness(108%) contrast(105%);
   }
 
@@ -309,24 +333,38 @@
     border-radius: 10px;
   }
 
+
+  .experience-block-stuffies {
+    height: 100%;
+    z-index: 2;
+    border-radius: 10px;
+  }
+
   .experience-block:hover {
     cursor: pointer;
     background-color:rgb(30, 52, 33);
     transition: 0.5s;
+  }
 
+  .experience-block-stuffies:hover {
+    background-color:rgb(30, 52, 33);
+    transition: 0.5s;
   }
 
   .experience-block > a {
     text-decoration: none;
   }
 
+  .experience-block-stuffies > a {
+    text-decoration: none;
+  }
   .projects-content {
     padding-top: 10px;
   } 
 
   .skills-content {
     padding-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
 }
@@ -371,8 +409,13 @@
   .experience-block:hover {
     cursor: pointer;
     background-color: unset !important;
-
   }
+
+  .experience-block-stuffies:hover {
+    cursor: pointer;
+    background-color: unset !important;
+  }
+
 
   .container {
     display: block;
@@ -420,6 +463,13 @@
 
 @media screen and (max-width: 600px) {
 
+  .exp-date > img {
+    width: 200px;
+    height: 120px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
   .Description > a > img {
     margin-top: 2px;
   }
@@ -427,8 +477,13 @@
   .experience-block:hover {
     cursor: pointer;
     background-color: unset !important;
-
   }
+
+  .experience-block-stuffies:hover {
+    cursor: pointer;
+    background-color: unset !important;
+  }
+
 
   * {
     overscroll-behavior-y: none;
@@ -458,6 +513,12 @@
     padding: 0px;
     margin-bottom: 30px;
   }
+
+  .experience-block-stuffies {
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  
   .exp-div {
     padding: 0px;
     margin-left: 0px;
@@ -571,6 +632,10 @@
     margin-top: -6px;
     font-size: 10px;
     min-width: 130px;
+  }
+
+  .exp-date > p {
+    margin-left: 2px;
   }
 
 
