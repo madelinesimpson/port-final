@@ -210,7 +210,7 @@ function Home () {
                                                 </div>
                                                 <h5>AI Engineering Intern</h5>
                                             </div>
-                                        <p>Independently researched, designed, and implemented multiple deep learning computer vision models using Python, Keras, and TensorFlow to analyze and extract key metadata from microscope images of C. Elegans worms, saving graduate biology students 6 hours of manual labor per week. Independently researched and designed a computer vision model to analyze specific qualities of Ugandan children’s art work for a study on the educational effects of implementing storytelling and art therapy into low income education systems.</p>
+                                        <p>Independently researched, designed, and implemented multiple deep learning computer vision models using Python, Keras, and TensorFlow to analyze and extract key metadata from microscope images of C. Elegans worms, saving graduate biology students 6 hours of manual labor per week. Collaborated with other students to research and design a computer vision model to analyze specific qualities of Ugandan children’s art work for a study on the educational effects of implementing storytelling and art therapy into low income education systems.</p>
                                         <div className="edu-bubble">
                                             <p>Python</p>
                                             <p>Keras</p>
