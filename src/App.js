@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './Home.jsx'
+import smoothscroll from 'smoothscroll-polyfill'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -7,7 +8,8 @@ import {
 
 
 function App() {
-
+  smoothscroll.polyfill();
+  
   const router = createBrowserRouter([
     { path: "/", element: <Home/> },
   ]);
