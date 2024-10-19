@@ -23,7 +23,7 @@ function Home () {
         }
         setActiveItem(item);
     };
-    
+
     useEffect(() => {
         const hash = window.location.hash;
         if (hash) {
@@ -33,36 +33,37 @@ function Home () {
                 setActiveItem(hash.substring(1).charAt(0).toUpperCase() + hash.substring(1).slice(1));
             }
         }
-    
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const navItem = document.querySelector(`.nav-item[data-section="${entry.target.id}"]`);
-    
-                    const navItems = document.querySelectorAll('.nav-item');
-                    navItems.forEach(item => item.classList.remove('active'));
-    
+                    const sectionId = entry.target.id;
+                    const navItem = document.querySelector(`.nav-item[data-section="${sectionId}"]`);
+
                     if (navItem) {
+                        const navItems = document.querySelectorAll('.nav-item');
+                        navItems.forEach(item => item.classList.remove('active'));
+
                         navItem.classList.add('active');
-                        setActiveItem(entry.target.id.charAt(0).toUpperCase() + entry.target.id.slice(1));
+                        setActiveItem(sectionId.charAt(0).toUpperCase() + sectionId.slice(1));
                     }
                 }
             });
         }, {
             threshold: 0.5
         });
-    
+
         sectionsRef.current.forEach(section => {
             observer.observe(section);
         });
-    
+
         return () => {
             sectionsRef.current.forEach(section => {
                 observer.unobserve(section);
             });
         };
-    }, []);
-
+      }, []);
+    
     return (
      <>
         <div className="container">
@@ -82,7 +83,7 @@ function Home () {
                         </div>
                     </div>
                     <div className="nav-container">
-                        <div className = "nav">
+                        <div className="nav">
                             <div className={`nav-item ${activeItem === 'Education' ? 'active' : ''}`} data-section="education" onClick={() => handleItemClick('Education')}>EDUCATION</div>
                             <div className={`nav-item ${activeItem === 'Experience' ? 'active' : ''}`} data-section="experience" onClick={() => handleItemClick('Experience')}>EXPERIENCE</div>
                             <div className={`nav-item ${activeItem === 'Projects' ? 'active' : ''}`} data-section="projects" onClick={() => handleItemClick('Projects')}>PROJECTS</div>
