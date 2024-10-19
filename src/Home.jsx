@@ -6,9 +6,11 @@ import live from './assets/live-still.jpg'
 import stuffies from './assets/stuffies-still.png'
 import koda from './assets/koda-still.png'
 import gnocchi from './assets/gnocchi.png'
+import smoothscroll from "smoothscroll-polyfill"
 import React, {useState, useEffect, useRef} from 'react'
 
 function Home () {
+    smoothscroll.polyfill();
 
     const [activeItem, setActiveItem] = useState('Education');
     const sectionsRef = useRef([]);
@@ -461,7 +463,7 @@ function Home () {
                                                 </div>
                                             </div>
                                         <p>Certainly not a skill but an interest (I am notoriously terrible at video games). Some of my favorite games throughout the years include Minecraft, Skate 3, Super Smash Bros, The Amazing Spiderman 2, Fortnite (I was in 8th grade give me a break), and Overwatch. 
-                                            I'm currently obsessing over the Zelda series and just finished Breath of the Wilde. I spent my middle school years making javascript games, and I participated in the Student Game Developers club at UVA.
+                                            I'm currently obsessing over the Zelda series and just finished Breath of the Wild. I spent my middle school years making javascript games, and I participated in the Student Game Developers club at UVA.
                                             I've always wanted to dive into making a full 3D game but have not found the time. </p>
                                         <div className="edu-bubble">
                                             <p>Video Games</p>
