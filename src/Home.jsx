@@ -463,7 +463,7 @@ function Home () {
                                                     <h4>Video Games</h4>
                                                 </div>
                                             </div>
-                                        <p>Certainly not a skill but an interest (I am notoriously terrible at video games). Some of my favorite games throughout the years include Minecraft, Skate 3, Super Smash Bros, The Amazing Spiderman 2, Fortnite, and Overwatch. 
+                                        <p>Certainly not a skill but an interest (I am notoriously terrible at video games). Some of my favorite games throughout the years include Minecraft, Skate 3, Super Smash Bros, The Amazing Spiderman 2, Fortnite, Fall Guys, and Overwatch. 
                                             I'm currently obsessing over the Zelda series and just finished Breath of the Wild. I spent my middle school years making javascript games, and I participated in the Student Game Developers club at UVA.
                                             I've always wanted to dive into making a full 3D game but have not found the time. </p>
                                         <div className="edu-bubble">
