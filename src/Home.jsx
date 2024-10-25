@@ -7,6 +7,7 @@ import stuffies from './assets/stuffies-still.png'
 import koda from './assets/koda-still.png'
 import gnocchi from './assets/gnocchi.png'
 import smoothscroll from "smoothscroll-polyfill"
+import TAG from './assets/TAG.png'
 import React, {useState, useEffect, useRef} from 'react'
 
 function Home () {
@@ -276,6 +277,31 @@ function Home () {
                                 </div>
                         </div>
                         <div className="experience-block">
+                            <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
+                                <div className="exp-div">
+                                    <div className="exp-date">
+                                        <p>SEPT 2024</p>
+                                    </div>
+                                    <div className="edu-desc">
+                                            <div className="header-link">
+                                                <div className="header-img">
+                                                    <h4>Portfolio Site</h4><img src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/external-link.svg"></img>
+                                                </div>
+                                                <h5>Full Stack Developer</h5>
+                                            </div>
+                                        <p>This site is a React application created from scratch and hosted on AWS with a GoDaddy domain.</p>
+                                        <div className="edu-bubble">
+                                            <p>React</p>
+                                            <p>Javascript</p>
+                                            <p>HTML</p>
+                                            <p>CSS</p>
+                                            <p>AWS Hosting</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="experience-block">
                             <a href = "https://github.com/madelinesimpson/3DRenderer" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -358,6 +384,54 @@ function Home () {
                             <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
+                                        <p>JUN 2023 - AUG 2023</p>
+                                        <img src={TAG}></img>
+                                    </div>
+                                    <div className="edu-desc">
+                                            <div className="header-link">
+                                                <div className="header-img">
+                                                    <h4>TAG App</h4>
+                                                </div>
+                                                <h5>Mobile Developer</h5>
+                                            </div>
+                                        <p>Involved in the design and implementation of features for a startup IOS app aimed to connect long distance friends. Contributed 10-15 hours per week to the project in XCode, utilizing Swift for front-end development and MongoDB Realm for back-end data management. Prepared a minimum viable product (MVP) for pitch competitions, focusing on iterative development and feedback integration to refine app functionality.</p>
+                                        <div className="edu-bubble">
+                                            <p>Swift</p>
+                                            <p>MongoDB</p>
+                                            <p>Xcode</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="experience-block">
+                            <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
+                                <div className="exp-div">
+                                    <div className="exp-date">
+                                        <p>JAN 2023 - MAY 2023</p>
+                                    </div>
+                                    <div className="edu-desc">
+                                            <div className="header-link">
+                                                <div className="header-img">
+                                                    <h4>UVA Study Buddy</h4>
+                                                </div>
+                                                <h5>Full Stack Developer</h5>
+                                            </div>
+                                        <p>Worked in a team of students in my Advanced Software Development Methods course to develop a web application aimed at connecting UVA students seeking study partners for specific courses. Developed features that allowed users to list their enrolled courses, a messaging system for students to communicate, collaborative scheduling functionality, and user authentication via the Google account API. We made use of the SIS/Class Listing API to provide accurate course information, and on the backed, we used Django 4 with PostgreSQL as the database. </p>
+                                        <div className="edu-bubble">
+                                            <p>Python</p>
+                                            <p>Django</p>
+                                            <p>HTML</p>
+                                            <p>PostgreSQL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="experience-block">
+                            <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
+                                <div className="exp-div">
+                                    <div className="exp-date">
                                         <p>JAN 2020 - SEPT 2020</p>
                                         <img src={marked}></img>
                                     </div>
@@ -376,31 +450,6 @@ function Home () {
                                             <p>Directing</p>
                                             <p>Premiere Pro</p>
                                             <p>After Effects</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="experience-block">
-                            <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
-                                <div className="exp-div">
-                                    <div className="exp-date">
-                                        <p>SEPT 2024</p>
-                                    </div>
-                                    <div className="edu-desc">
-                                            <div className="header-link">
-                                                <div className="header-img">
-                                                    <h4>Portfolio Site</h4><img src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/external-link.svg"></img>
-                                                </div>
-                                                <h5>Full Stack Developer</h5>
-                                            </div>
-                                        <p>This site is a React application created from scratch and hosted on AWS with a GoDaddy domain.</p>
-                                        <div className="edu-bubble">
-                                            <p>React</p>
-                                            <p>Javascript</p>
-                                            <p>HTML</p>
-                                            <p>CSS</p>
-                                            <p>AWS Hosting</p>
                                         </div>
                                     </div>
                                 </div>
