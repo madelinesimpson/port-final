@@ -239,11 +239,12 @@ function Home () {
                                                 </div>
                                                 <h5>Software Engineering Intern</h5>
                                             </div>
-                                        <p>Designed the full-stack architecture for the company’s transition from a WordPress site to a Ruby on Rails application. Worked in a team of software engineers in sprints to implement this architecture with Ruby</p>
+                                        <p>Designed the full-stack architecture for the company’s transition from a WordPress site to a Ruby on Rails application. Worked in a team of software engineers in sprints to implement this architecture with Ruby, HTML, CSS, and Javascript.</p>
                                         <div className="edu-bubble">
                                             <p>HTML</p>
                                             <p>CSS</p>
                                             <p>Ruby</p>
+                                            <p>HTML/TCP Protocols</p>
                                             <p>Agile Development</p>
                                         </div>
                                     </div>
