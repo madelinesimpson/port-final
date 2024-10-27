@@ -469,7 +469,7 @@ function Home () {
                                                 </div>
                                                 <h5>Game Programmer</h5>
                                             </div>
-                                        <p>Developed a 2D platformer game in Unity using C#. Designed and implemented multiple different levels with different obstacles and goals. Programmed core gameplay elements, including character movement and collision detection while debugging any glitches or errors</p>
+                                        <p>Developed a 2D platformer game in Unity using C#. Designed and implemented multiple levels with different obstacles and goals. Programmed core gameplay elements, including character movement and collision detection while debugging any glitches or errors</p>
                                         <div className="edu-bubble">
                                             <p>Unity</p>
                                             <p>C#</p>
