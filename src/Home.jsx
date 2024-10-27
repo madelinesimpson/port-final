@@ -456,6 +456,29 @@ function Home () {
                                 </div>
                             </a>
                         </div>
+                        <div className="experience-block">
+                            <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
+                                <div className="exp-div">
+                                    <div className="exp-date">
+                                        <p>JAN 2020 - MAR 2020</p>
+                                    </div>
+                                    <div className="edu-desc">
+                                            <div className="header-link">
+                                                <div className="header-img">
+                                                    <h4>Unity 2D Platformer</h4>
+                                                </div>
+                                                <h5>Game Programmer</h5>
+                                            </div>
+                                        <p>Developed a 2D platformer game in Unity using C#. Designed and implemented multiple different levels with different obstacles and goals. Programmed core gameplay elements, including character movement and collision detection while debugging any glitches or errors</p>
+                                        <div className="edu-bubble">
+                                            <p>Unity</p>
+                                            <p>C#</p>
+                                            <p>Game Design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </section>
                     <section ref={el => sectionsRef.current[3] = el} className="skills-content" id="skills">
                         <h3>EXTRAS & INTERESTS</h3>
