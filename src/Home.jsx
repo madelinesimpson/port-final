@@ -278,7 +278,6 @@ function Home () {
                                 </div>
                         </div>
                         <div className="experience-block">
-                            <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>SEPT 2024</p>
@@ -300,7 +299,6 @@ function Home () {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
                         </div>
                         <div className="experience-block">
                             <a href = "https://github.com/madelinesimpson/3DRenderer" target="_blank">
