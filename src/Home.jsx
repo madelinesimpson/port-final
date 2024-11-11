@@ -382,7 +382,6 @@ function Home () {
                             </a>
                         </div>
                         <div className="experience-block">
-                            <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>JUN 2023 - AUG 2023</p>
@@ -403,10 +402,8 @@ function Home () {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
                         </div>
                         <div className="experience-block">
-                            <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>JAN 2023 - MAY 2023</p>
@@ -427,7 +424,6 @@ function Home () {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
                         </div>
                         <div className="experience-block">
                             <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
