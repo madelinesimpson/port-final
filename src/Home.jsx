@@ -8,12 +8,18 @@ import koda from './assets/koda-still.png'
 import gnocchi from './assets/gnocchi.png'
 import smoothscroll from "smoothscroll-polyfill"
 import TAG from './assets/TAG.png'
+import linked from './assets/linkedin.png'
+import gmail from './assets/21-Gmail.png'
+import spotify from './assets/25-Spotify.png'
+import guitar from './assets/guitar.png'
+import phone from './assets/phone.png'
+import github from './assets/github.png'
 import React, {useState, useEffect, useRef} from 'react'
 
 function Home () {
     smoothscroll.polyfill();
 
-    const [activeItem, setActiveItem] = useState('Education');
+    const [activeItem, setActiveItem] = useState('About');
     const sectionsRef = useRef([]);
 
     const handleItemClick = (item) => {
@@ -71,87 +77,41 @@ function Home () {
             <div className="division">
                 <div className="profile">
                     <div className = "profile-header">
-                        <img className="headshot" src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/headshot.jpeg"></img>
-                        <div class="profile-header-text">
-                            <h1 className="Name">Madeline Simpson</h1>
-                            <p className="Description">Pursuing a BS in Computational Media @ Georgia Tech (Concentrations in Film and Media), Minor in Psychology<br></br>Contact: madelinegrsimpson@gmail.com,<br></br>
-                                <div class="links">
-                                    <a href="https://www.linkedin.com/in/madeline-simpson-286604203/" target="_blank">LinkedIn<img src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/external-link.svg"></img></a>
-                                    <div class="separator" role="presentation"></div> 
-                                    <a href="https://github.com/madelinesimpson" target="_blank">Github<img src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/external-link.svg"></img></a>
-                                </div>
-                            </p>
+                        <div className = "profile-header-content">
+                            <div class="profile-header-text">
+                                <h2 className="Name"><span>Madeline Simpson</span></h2>
+                                <h2 className="Description"><span>Junior @ Georgia Tech<br></br>BS in Computational Media<br></br> Minor in Psychology</span></h2>
+                            </div>
                         </div>
                     </div>
                     <div className="nav-container">
                         <div className="nav">
-                            <div className={`nav-item ${activeItem === 'Education' ? 'active' : ''}`} data-section="education" onClick={() => handleItemClick('Education')}>EDUCATION</div>
+                            <div className={`nav-item ${activeItem === 'About' ? 'active' : ''}`} data-section="about" onClick={() => handleItemClick('About')}>ABOUT</div>
                             <div className={`nav-item ${activeItem === 'Experience' ? 'active' : ''}`} data-section="experience" onClick={() => handleItemClick('Experience')}>EXPERIENCE</div>
                             <div className={`nav-item ${activeItem === 'Projects' ? 'active' : ''}`} data-section="projects" onClick={() => handleItemClick('Projects')}>PROJECTS</div>
                             <div className={`nav-item ${activeItem === 'Skills' ? 'active' : ''}`} data-section="skills" onClick={() => handleItemClick('Skills')}>EXTRAS & INTERESTS</div>
                         </div>
                     </div>
+                    <div className="social-media-icons">
+                        <a href="https://www.linkedin.com/in/madeline-simpson-286604203" target="_blank"><img src={linked}></img></a>
+                        <a href="https://github.com/madelinesimpson" target="_blank"><img src={github}></img></a>
+                        <a href="https://open.spotify.com/artist/5OdDYFHJuz1Ryd5rRZHDxK?si=1fI8SdH0QauNe_Ghs3Vgeg" target="_blank"><img src={spotify}></img></a>
+                        <a href="mailto:madelinegrsimpson@gmail.com" target="_blank"><img src={gmail}></img></a>
+                    </div>
                 </div>
                 <div className="content">
-                    <section ref={el => sectionsRef.current[0] = el} className="education-content" id="education">
-                        <h3>EDUCATION</h3>
-                        <div className="education-block">
-                            <div className="edu-div">
-                                <div className="edu-date">
-                                    <p>JAN 2024 - PRESENT</p>
-                                </div>
-                                <div className="edu-desc">
-                                    <h4>Georgia Tech (Expected to graduate in May, 2026)</h4>
-                                    <p>3.741 GPA | Zell Miller Scholar | Dean's List | Georgia Tech Musician's Network</p>
-                                    <p>Relevant Coursework: Data Structures and Algorithms (Javascript), Linear Algebra, Multivariable Calculus, Intro to Film, Animation</p>
-                                    <div className="edu-bubble">
-                                        <p>Java</p>
-                                        <p>Film</p>
-                                        <p>Animation</p>
-                                        <p>Linear Algebra</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="education-block">
-                            <div className="edu-div">
-                                <div className="edu-date">
-                                    <p>MAY 2021 - MAY 2023</p>
-                                </div>
-                                <div className="edu-desc">
-                                    <h4>University of Virginia (Pursued a BA in Computer Science, Minor in Entrepreneurship)</h4>
-                                    <p>3.784 GPA | Phi Eta Sigma Honors Society | Dean's List | Division 1 Varsity Soccer Player (May 2021 - May 2022)</p>
-                                    <p>Relevant Coursework: Advanced Software Development Methods (Python and Django),
-                                        Software Development Methods (Java), Program and Data Representation (C++), Computer Architecture (C), 
-                                        Introduction to Entrepreneurship, Foundations of Commerce</p>
-                                    <div className="edu-bubble">
-                                        <p>Python</p>
-                                        <p>C++</p>
-                                        <p>C</p>
-                                        <p>Java</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="education-block">
-                            <div className="edu-div">
-                                <div className="edu-date">
-                                    <p>AUG 2017 - MAY 2021</p>
-                                </div>
-                                <div className="edu-desc">
-                                    <h4>The Westminster Schools</h4>
-                                    <p>96 GPA (on 100 scale) | AP Scholar with Distinction | National Honors Society | 2020 Goizueta Spanish Award Winner | Founder of Wesminster StudioW Film Club | Varsity Soccer Player</p>
-                                    <p>Relevant Coursework: AP Computer Science A (Java), AP Computer Science Principles</p>
-                                    <div className="edu-bubble">
-                                        <p>Java</p>
-                                        <p>Film</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <section ref={el => sectionsRef.current[0] = el} className="about-content" id="about">
+                    <div class = "about-bio">
+                        <p>Hi there! My name is Madeline Simpson, and I am passionate about expanding the limits of creative expression with coding. I make films, music, and video games, and I want to make tools that allow creative people to realize whatever crazy idea they've conjured up in their heads (including my own).
+                        I am currrently studying Computaional Media at Georgia Tech, a major unique to Georgia Tech's College of Computing that allows for the intersection of creativity and technology. Feel free to scroll down and explore some of my projects and interests!
+                        </p>
+                    </div>
+                    <div className = "pictures">
+                        <img className="phone-img" src={phone}></img>
+                        <img className="guitar-img" src={guitar}></img> 
+                    </div>
                     </section>
                     <section ref={el => sectionsRef.current[1] = el} className="experience-content" id="experience">
-                    <h3>EXPERIENCE</h3>
                         <div className="experience-block">
                             <a href = "https://en.wikipedia.org/wiki/One_Spoon_of_Chocolate" target="_blank">
                                 <div className="exp-div">
@@ -253,7 +213,6 @@ function Home () {
                         </div>
                     </section>
                     <section ref={el => sectionsRef.current[2] = el} className="projects-content" id="projects">
-                        <h3>PROJECTS</h3>
                         <div className="experience-block-stuffies">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -379,7 +338,7 @@ function Home () {
                                 </div>
                             </a>
                         </div>
-                        <div className="experience-block">
+                        <div className="experience-block-stuffies">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>JUN 2023 - AUG 2023</p>
@@ -401,7 +360,7 @@ function Home () {
                                     </div>
                                 </div>
                         </div>
-                        <div className="experience-block">
+                        <div className="experience-block-stuffies">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>JAN 2023 - MAY 2023</p>
@@ -450,8 +409,7 @@ function Home () {
                                 </div>
                             </a>
                         </div>
-                        <div className="experience-block">
-                            <a href = "https://www.youtube.com/watch?v=3Gn1eLF2rDc&t=127s" target="_blank">
+                        <div className="experience-block-stuffies">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>JAN 2020 - MAR 2020</p>
@@ -471,11 +429,9 @@ function Home () {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
                         </div>
                     </section>
                     <section ref={el => sectionsRef.current[3] = el} className="skills-content" id="skills">
-                        <h3>EXTRAS & INTERESTS</h3>
                         <div className="experience-block">
                             <a href = "https://github.com/madelinesimpson/port-final/tree/main/src/assets/Koda.png" target="_blank">
                                 <div className="exp-div">
