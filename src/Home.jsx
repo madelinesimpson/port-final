@@ -112,6 +112,7 @@ function Home () {
                     </div>
                     </section>
                     <section ref={el => sectionsRef.current[1] = el} className="experience-content" id="experience">
+                        <h3>EXPERIENCE</h3>
                         <div className="experience-block">
                             <a href = "https://en.wikipedia.org/wiki/One_Spoon_of_Chocolate" target="_blank">
                                 <div className="exp-div">
@@ -138,6 +139,7 @@ function Home () {
                             </a>
                         </div>
                         <div className="experience-block">
+                            
                             <a href = "https://www.instagram.com/p/C_wobTJOxjk/?img_index=1" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -213,6 +215,7 @@ function Home () {
                         </div>
                     </section>
                     <section ref={el => sectionsRef.current[2] = el} className="projects-content" id="projects">
+                        <h3>PROJECTS</h3>
                         <div className="experience-block-stuffies">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -432,6 +435,7 @@ function Home () {
                         </div>
                     </section>
                     <section ref={el => sectionsRef.current[3] = el} className="skills-content" id="skills">
+                        <h3>INTERESTS</h3>
                         <div className="experience-block">
                             <a href = "https://github.com/madelinesimpson/port-final/tree/main/src/assets/Koda.png" target="_blank">
                                 <div className="exp-div">

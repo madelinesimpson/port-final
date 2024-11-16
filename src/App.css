@@ -8,19 +8,19 @@
   }
 
   .about-content > h3 {
-    margin-left: 10px;
+    display: none;
   }
 
   .experience-content > h3 {
-    margin-left: 10px;
+    display: none;
   }
 
   .projects-content > h3 {
-    margin-left: 10px;
+    display: none;
   }
 
   .skills-content > h3 {
-    margin-left: 10px;
+    display: none;
   }
 
   .edu-bubble {
@@ -481,6 +481,14 @@
 
 @media screen and (max-width: 950px) {
 
+  .projects-content {
+    padding-top: 40px;
+  }
+
+  .skills-content {
+    padding-top: 40px;
+  }
+
   .experience-block:hover {
     cursor: pointer;
     background-color: unset !important;
@@ -551,6 +559,38 @@
 
   .phone {
     margin-left: 0px;
+  }
+
+  .about-content > h3 {
+    display: flex;
+    margin-left: 10px;
+  }
+
+  .experience-content > h3 {
+    background-color: #e3d279;
+    width: 119px;
+    color: #b05238;
+    display: flex;
+    margin-left: 10px;
+    padding-left: 7px;
+  }
+
+  .projects-content > h3 {
+    background-color: #e3d279;
+    width: 103px;
+    color: #b05238;
+    display: flex;
+    margin-left: 10px;
+    padding-left: 7px;
+  }
+
+  .skills-content > h3 {
+    background-color: #e3d279;
+    width: 105px;
+    color: #b05238;
+    display: flex;
+    margin-left: 10px;
+    padding-left: 7px;
   }
 
 }
@@ -693,28 +733,31 @@
   .projects-content > h3 {
     font-size: 15px;
     margin-left: 0px;
+    width: 85px;
   }
 
   .experience-content > h3 {
+    width: 97px;
     font-size: 15px;
     margin-left: 0px;
   }
 
   .skills-content > h3 {
+    width: 86px;
     font-size: 15px;
     margin-left: 0px;
   }
 
   .experience-content {
-    margin-top: -10px;
+    margin-top: -50px;
   }
 
-  .preojcts-content {
-    margin-top: -10px;
+  .projects-content {
+    margin-top: -50px;
   }
 
   .skills-content {
-    margin-top: -10px;
+    margin-top: -50px;
   }
 
   .edu-date {
@@ -746,6 +789,11 @@
     margin-top: 60px;
     margin-left: 5px;
     width: 90vw;
+  }
+
+  .pictures > img {
+    height: 180px;
+    opacity: 0.95;
   }
 
 
