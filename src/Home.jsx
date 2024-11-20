@@ -479,7 +479,7 @@ function Home () {
                                 </div>
                             </a>
                         </div>
-                        <div className="experience-block">
+                        <div className="experience-block-stuffies">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>2010 - PRESENT</p>
