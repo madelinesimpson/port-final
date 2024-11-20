@@ -229,7 +229,7 @@ function Home () {
                                             </div>
                                             <h5>Writer, Director, and Editor</h5>
                                         </div>
-                                        <p>Writing and gathering resoures to create a comedic short film called Stuffies. The film explores the Interal Family Systems model of psychology by personifying the different parts of the personality through stuffed animals from different eras of the protagonist's life. However, once a bitter ex-partner steals some of these stuffed animals, we embark on a wild goose chase to recollect them, and thus, reclaim the protagonist's personality from this ex as a whole.</p>
+                                        <p>Writing and gathering resoures to create a short film. The film explores the Interal Family Systems model of psychology by personifying the different parts of the personality through stuffed animals from different eras of the protagonist's life. However, once a bitter ex-partner steals some of these stuffed animals, we embark on a wild goose chase to recollect them, and thus, reclaim the protagonist's personality from this ex as a whole.</p>
                                         <div className="edu-bubble">
                                             <p>Writing</p>
                                             <p>Directing</p>
@@ -300,7 +300,7 @@ function Home () {
                                                 </div>
                                                 <h5>Full Stack Developer</h5>
                                             </div>
-                                        <p>Built and deployed a responsive website using React to showcase information about my band Utilized Javascript and CSS, incorporating some of my own pixel art to create a nostalgic, video game inspired, interactive and dynamic user interface. Integrated the BandsInTown API to dynamically showcase data about upcoming shows on the website</p>
+                                        <p>Built and deployed a responsive website using React to showcase information about my band. Utilized Javascript and CSS, incorporating some of my own pixel art to create a nostalgic, video game inspired, interactive and dynamic user interface. Integrated the BandsInTown API to dynamically showcase data about upcoming shows on the website.</p>
                                         <div className="edu-bubble">
                                             <p>React</p>
                                             <p>Javascript</p>
