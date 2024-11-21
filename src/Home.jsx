@@ -102,7 +102,7 @@ function Home () {
                 <div className="content">
                     <section ref={el => sectionsRef.current[0] = el} className="about-content" id="about">
                     <div class = "about-bio">
-                        <p>Hi there! My name is Madeline Simpson, and I am passionate about expanding the limits of creative expression with coding. I make films, music, and video games, and I want to make tools that allow creative people to realize whatever crazy idea they've conjured up in their heads (including my own).
+                        <p>Hi there! My name is Madeline Simpson, and I am passionate about expanding the limits of creative expression with technology. I make films, music, and video games, and I want to make tools that allow creative people to realize whatever crazy idea they've conjured up in their heads (including my own).
                         I am currrently studying Computaional Media at Georgia Tech, a major unique to Georgia Tech's College of Computing that allows for the intersection of creativity and technology. Feel free to scroll down and explore some of my projects and interests!
                         </p>
                     </div>
