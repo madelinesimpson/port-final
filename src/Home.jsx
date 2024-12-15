@@ -78,7 +78,7 @@ function Home () {
                 <div className="profile">
                     <div className = "profile-header">
                         <div className = "profile-header-content">
-                            <div class="profile-header-text">
+                            <div className = "profile-header-text">
                                 <h2 className="Name"><span>Madeline Simpson</span></h2>
                                 <h2 className="Description"><span>Junior @ Georgia Tech<br></br>BS in Computational Media<br></br> Minor in Psychology</span></h2>
                             </div>
