@@ -14,6 +14,7 @@ import spotify from './assets/25-Spotify.png'
 import guitar from './assets/guitar.png'
 import phone from './assets/phone.png'
 import github from './assets/github.png'
+import 'intersection-observer'
 import React, {useState, useEffect, useRef} from 'react'
 
 function Home () {
@@ -25,7 +26,7 @@ function Home () {
     const handleItemClick = (item) => {
         const section = document.getElementById(item.toLowerCase());
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
             window.history.pushState(null, null, `#${item.toLowerCase()}`);
         }
         setActiveItem(item);
@@ -80,7 +81,7 @@ function Home () {
                         <div className = "profile-header-content">
                             <div className = "profile-header-text">
                                 <h2 className="Name"><span>Madeline Simpson</span></h2>
-                                <h2 className="Description"><span>Junior @ Georgia Tech<br></br>BS in Computational Media<br></br> Minor in Psychology</span></h2>
+                                <h2 className="Description"><span>Junior @ Georgia Tech<br />BS in Computational Media<br /> Minor in Psychology</span></h2>
                             </div>
                         </div>
                     </div>
@@ -101,7 +102,7 @@ function Home () {
                 </div>
                 <div className="content">
                     <section ref={el => sectionsRef.current[0] = el} className="about-content" id="about">
-                    <div class = "about-bio">
+                    <div className = "about-bio">
                         <p>Hi there! My name is Madeline Simpson, and I am passionate about expanding the limits of creative expression with technology. I make films, music, and video games, and I want to make tools that allow creative people to realize whatever crazy idea they've conjured up in their heads (including my own).
                         I am currrently studying Computaional Media at Georgia Tech, a major unique to Georgia Tech's College of Computing that allows for the intersection of creativity and technology. Feel free to scroll down and explore some of my projects and interests!
                         </p>
@@ -399,7 +400,7 @@ function Home () {
                                                 </div>
                                                 <h5>Writer, Director, and Editor</h5>
                                             </div>
-                                        <p><b>The Emmys - National Student Production Award Winner: Best Director (2021) <br></br><br></br> All American High School Film Festival Nominee: Best Screenplay, Female Rising Star (2020)</b></p>
+                                        <p><b>The Emmys - National Student Production Award Winner: Best Director (2021)<br /><br /> All American High School Film Festival Nominee: Best Screenplay, Female Rising Star (2020)</b></p>
                                         <p>Created and utilized my high school's film club, StudioW, to produce a short film I had written with my friend, Sam Cohn. Casted actors, 
                                             scouted locations, raised funding, sourced equipment, shot listed, directed, operated the camera for, and edited the film in After Effects and Premiere Pro. </p>
                                         <div className="edu-bubble">
