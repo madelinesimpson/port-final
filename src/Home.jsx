@@ -14,6 +14,7 @@ import spotify from './assets/25-Spotify.png'
 import guitar from './assets/guitar.png'
 import phone from './assets/phone.png'
 import github from './assets/github.png'
+import shimon from './assets/Shimon.jpeg'
 import 'intersection-observer'
 import React, {useState, useEffect, useRef} from 'react'
 
@@ -139,8 +140,7 @@ function Home () {
                                 </div>
                             </a>
                         </div>
-                        <div className="experience-block">
-                            
+                        <div className="experience-block">  
                             <a href = "https://www.instagram.com/p/C_wobTJOxjk/?img_index=1" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -217,28 +217,31 @@ function Home () {
                     </section>
                     <section ref={el => sectionsRef.current[2] = el} className="projects-content" id="projects">
                         <h3>PROJECTS</h3>
-                        <div className="experience-block-stuffies">
+                        <div className="experience-block">
+                            <a href = "https://gtcmt.gatech.edu/shimon">
                                 <div className="exp-div">
                                     <div className="exp-date">
-                                        <p>AUG 2024 - PRESENT</p>
-                                        <img src={stuffies}></img>
+                                        <p>JAN 2025 - PRESENT</p>
+                                        <img src={shimon}></img>
                                     </div>
                                     <div className="edu-desc">
                                         <div className="header-link">
                                             <div className="header-img">
-                                                <h4>Stuffies Short Film</h4>
+                                                <h4>Robotic Musicianship Lab - Shimon</h4><img src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/external-link.svg"></img>
                                             </div>
-                                            <h5>Writer, Director, and Editor</h5>
+                                            <h5>Software Engineer</h5>
                                         </div>
-                                        <p>Writing and gathering resoures to create a short film. The film explores the Interal Family Systems model of psychology by personifying the different parts of the personality through stuffed animals from different eras of the protagonist's life. However, once a bitter ex-partner steals some of these stuffed animals, we embark on a wild goose chase to recollect them, and thus, reclaim the protagonist's personality from this ex as a whole.</p>
+                                        <p>Shimon is an improvising robotic marimba player that is designed to create meaningful and inspiring musical interactions with humans, leading to novel musical experiences 
+                                            and outcomes. I am working in a team in Unity to create a VR application in which users have the ability to play and write music with a digital version of Shimon. I am currently writing C# scripts to translate MIDI files into Shimon’s arm movement on the marimba in real time.</p>
                                         <div className="edu-bubble">
-                                            <p>Writing</p>
-                                            <p>Directing</p>
-                                            <p>Premiere Pro</p>
-                                            <p>After Effects</p>
+                                            <p>C#</p>
+                                            <p>Machine Learning</p>
+                                            <p>Unity</p>
+                                            <p>Music</p>
                                         </div>
                                     </div>
                                 </div>
+                            </a>
                         </div>
                         <div className="experience-block">
                                 <div className="exp-div">
