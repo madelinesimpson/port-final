@@ -15,6 +15,10 @@ import guitar from './assets/guitar.png'
 import phone from './assets/phone.png'
 import github from './assets/github.png'
 import shimon from './assets/Shimon.jpeg'
+import apple from './assets/apple.jpg'
+import emory from './assets/emory.png'
+import plum from './assets/plum.png'
+import sharc from './assets/sharc.jpg'
 import 'intersection-observer'
 import React, {useState, useEffect, useRef} from 'react'
 
@@ -82,7 +86,7 @@ function Home () {
                         <div className = "profile-header-content">
                             <div className = "profile-header-text">
                                 <h2 className="Name"><span>Madeline Simpson</span></h2>
-                                <h2 className="Description"><span>Junior @ Georgia Tech<br />BS in Computational Media<br /> Minor in Psychology</span></h2>
+                                <h2 className="Description"><span>Senior @ Georgia Tech<br />BS in Computational Media</span></h2>
                             </div>
                         </div>
                     </div>
@@ -104,7 +108,7 @@ function Home () {
                 <div className="content">
                     <section ref={el => sectionsRef.current[0] = el} className="about-content" id="about">
                     <div className = "about-bio">
-                        <p>Hi there! My name is Madeline Simpson, and I am passionate about expanding the limits of creative expression with technology. I make films, music, and video games, and I want to make tools that allow creative people to realize whatever crazy idea they've conjured up in their heads (including my own).
+                        <p>Hi there! My name is Madeline Simpson, and I am passionate about expanding the limits of creative expression with technology. I am particularly interested in computer graphics and computer audio, and I want to make tools that allow creative people to realize whatever crazy idea they've conjured up in their heads (including my own).
                         I am currrently studying Computaional Media at Georgia Tech, a major unique to Georgia Tech's College of Computing that allows for the intersection of creativity and technology. Feel free to scroll down and explore some of my projects and interests!
                         </p>
                     </div>
@@ -116,6 +120,29 @@ function Home () {
                     <section ref={el => sectionsRef.current[1] = el} className="experience-content" id="experience">
                         <h3>EXPERIENCE</h3>
                         <div className="experience-block">
+                                <div className="exp-div">
+                                    <div className="exp-date">
+                                        <p>MAY 2025 - AUG 2025</p>
+                                        <img src={apple}></img>
+                                    </div>
+                                    <div className="edu-desc">
+                                            <div className="header-link">
+                                                <div className="header-img">
+                                                    <h4>Apple</h4><img src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/external-link.svg"></img>
+                                                </div>
+                                                <h5>Software Engineering Intern</h5>
+                                            </div>
+                                        <p>Designed and optimized blur compute shaders in a graphics pipeline with Metal and Objective-C, achieving a 7x performance gain over the initial implementation. Improved performance by 3x through the optimization of complex shader operations, including dynamic mipmap based sampling in the vertex and fragment stages. Collaborated with team members to effectively integrate a prototype into an established service oriented architecture</p>
+                                        <div className="edu-bubble">
+                                            <p>Objective-C</p>
+                                            <p>C++</p>
+                                            <p>Metal Shading Language</p>
+                                            <p>Computer Graphics</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        {/* <div className="experience-block">
                             <a href = "https://en.wikipedia.org/wiki/One_Spoon_of_Chocolate" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -139,8 +166,8 @@ function Home () {
                                     </div>
                                 </div>
                             </a>
-                        </div>
-                        <div className="experience-block">  
+                        </div> */}
+                        {/* <div className="experience-block">  
                             <a href = "https://www.instagram.com/p/C_wobTJOxjk/?img_index=1" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -163,12 +190,13 @@ function Home () {
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </div> */}
                         <div className="experience-block">
                             <a href = "https://github.com/madelinesimpson/CElegan-Classification" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>AUG 2023 - DEC 2023</p>
+                                        <img src={emory}></img>
                                     </div>
                                     <div className="edu-desc">
                                             <div className="header-link">
@@ -194,6 +222,7 @@ function Home () {
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>MAY 2022 - AUG 2022</p>
+                                        <img src={plum}></img>
                                     </div>
                                     <div className="edu-desc">
                                             <div className="header-link">
@@ -218,10 +247,35 @@ function Home () {
                     <section ref={el => sectionsRef.current[2] = el} className="projects-content" id="projects">
                         <h3>PROJECTS</h3>
                         <div className="experience-block">
+                            <a href = "#" target="_blank">
+                                <div className="exp-div">
+                                    <div className="exp-date">
+                                        <p>AUG 2025 - PRESENT</p>
+                                        <img src={sharc}></img>
+                                    </div>
+                                    <div className="edu-desc">
+                                        <div className="header-link">
+                                            <div className="header-img">
+                                                <h4>AnyTone SHARC Board Experimentation</h4><img src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/external-link.svg"></img>
+                                            </div>
+                                            <h5>Software Engineer</h5>
+                                        </div>
+                                        <p>Utilizing music processing AI to separate songs into individual tracks for guitar tone processing. Interfacing with the SHARC board using C++ to manipulate IR, EQ, gain, and wet effects to best match an inputted guitar tone signal to that of the guitar tone file, thus reproducing any inputted guitar tone.</p>
+                                        <div className="edu-bubble">
+                                            <p>C++</p>
+                                            <p>Machine Learning</p>
+                                            <p>DSP</p>
+                                            <p>Music Technology</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="experience-block">
                             <a href = "https://gtcmt.gatech.edu/shimon">
                                 <div className="exp-div">
                                     <div className="exp-date">
-                                        <p>JAN 2025 - PRESENT</p>
+                                        <p>JAN 2025 - MAY 2025</p>
                                         <img src={shimon}></img>
                                     </div>
                                     <div className="edu-desc">
@@ -231,19 +285,19 @@ function Home () {
                                             </div>
                                             <h5>Software Engineer</h5>
                                         </div>
-                                        <p>Shimon is an improvising robotic marimba player that is designed to create meaningful and inspiring musical interactions with humans, leading to novel musical experiences 
-                                            and outcomes. I am working in a team in Unity to create a VR application in which users have the ability to play and write music with a digital version of Shimon. I am currently writing C# scripts to translate MIDI files into Shimon’s arm movement on the marimba in real time.</p>
+                                        <p>Worked in a team to build the virtual reality version of an interactive musical robot named Shimon in Unity. 
+                                            Developed C# scripts to process MIDI input from the user and generate MIDI output for the robot utilizing musical improvisation machine learning models. Conducted user studies on the level of engagement/interest produced by the VR model in comparison real robot.</p>
                                         <div className="edu-bubble">
                                             <p>C#</p>
                                             <p>Machine Learning</p>
                                             <p>Unity</p>
-                                            <p>Music</p>
+                                            <p>Music Technology</p>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div className="experience-block">
+                        {/* <div className="experience-block">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>SEPT 2024</p>
@@ -265,7 +319,7 @@ function Home () {
                                         </div>
                                     </div>
                                 </div>
-                        </div>
+                        </div> */}
                         <div className="experience-block">
                             <a href = "https://github.com/madelinesimpson/3DRenderer" target="_blank">
                                 <div className="exp-div">
@@ -316,7 +370,7 @@ function Home () {
                                 </div>
                             </a>
                         </div>
-                        <div className="experience-block">
+                        {/* <div className="experience-block">
                             <a href = "https://linktr.ee/theminuniform?fbclid=PAZXh0bgNhZW0CMTEAAaamh7_9T1gUZtlxUKGm7omEuK8K_u2xVnAHnDUTaM0Q5rzWoJ9spgUNqEY_aem_oFFukku4fEAq4lL-YVuECQ" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -344,7 +398,7 @@ function Home () {
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </div> */}
                         <div className="experience-block-stuffies">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -367,7 +421,7 @@ function Home () {
                                     </div>
                                 </div>
                         </div>
-                        <div className="experience-block-stuffies">
+                        {/* <div className="experience-block-stuffies">
                                 <div className="exp-div">
                                     <div className="exp-date">
                                         <p>JAN 2023 - MAY 2023</p>
@@ -436,10 +490,35 @@ function Home () {
                                         </div>
                                     </div>
                                 </div>
-                        </div>
+                        </div> */}
                     </section>
                     <section ref={el => sectionsRef.current[3] = el} className="skills-content" id="skills">
                         <h3>INTERESTS</h3>
+                        <div className="experience-block">
+                            <a href = "https://linktr.ee/theminuniform?fbclid=PAZXh0bgNhZW0CMTEAAaamh7_9T1gUZtlxUKGm7omEuK8K_u2xVnAHnDUTaM0Q5rzWoJ9spgUNqEY_aem_oFFukku4fEAq4lL-YVuECQ" target="_blank">
+                                <div className="exp-div">
+                                    <div className="exp-date">
+                                        <p>NOV 2023 - PRESENT</p>
+                                        <img src={live}></img>
+                                    </div>
+                                    <div className="edu-desc">
+                                            <div className="header-link">
+                                                <div className="header-img">
+                                                    <h4>Them in Uniform Band</h4><img src="https://raw.githubusercontent.com/madelinesimpson/port-final/refs/heads/main/src/assets/external-link.svg"></img>
+                                                </div>
+                                                <h5>Lead Singer & Guitarist</h5>
+                                            </div>
+                                        <p>I write, record, and mix indie/indie rock music in my spare time. My band performs shows around the south east, and it's one of my favorite things that I do. Some bands I love include The Backseat Lovers, The Strokes, Cage the Elephant, Carseat Headrest, Nirvana, and I could go on forever honestly.</p>
+                                        <div className="edu-bubble">
+                                            <p>Songwriting</p>
+                                            <p>Music Production / Mixing</p>
+                                            <p>Logic Pro</p>
+                                            <p>Ableton</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                         <div className="experience-block">
                             <a href = "https://github.com/madelinesimpson/port-final/tree/main/src/assets/Koda.png" target="_blank">
                                 <div className="exp-div">
@@ -461,7 +540,7 @@ function Home () {
                                 </div>
                             </a>
                         </div>
-                        <div className="experience-block">
+                        {/* <div className="experience-block">
                             <a href = "https://www.instagram.com/madeline_simpson_cooks" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -482,7 +561,7 @@ function Home () {
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </div> */}
                         <div className="experience-block-stuffies">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -495,8 +574,7 @@ function Home () {
                                                 </div>
                                             </div>
                                         <p>Certainly not a skill but an interest (I am notoriously terrible at video games). Some of my favorite games throughout the years include Minecraft, Skate 3, Super Smash Bros, The Amazing Spiderman 2, Fortnite, Fall Guys, and Overwatch. 
-                                            I'm currently obsessing over the Zelda series and just finished Breath of the Wild. I spent my middle school years making javascript games, and I participated in the Student Game Developers club at UVA.
-                                            I've always wanted to dive into making a full 3D game but have not found the time. </p>
+                                            I'm currently obsessing over the Zelda series and just finished Breath of the Wild.</p>
                                         <div className="edu-bubble">
                                             <p>Video Games</p>
                                             <p>Javascript</p>
