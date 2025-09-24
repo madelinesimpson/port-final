@@ -344,7 +344,7 @@ function Home () {
                                 </div>
                             </a>
                         </div>
-                        <div className="experience-block">
+                        {/* <div className="experience-block">
                             <a href = "https://github.com/madelinesimpson/theminuniformsite" target="_blank">
                                 <div className="exp-div">
                                     <div className="exp-date">
@@ -369,7 +369,7 @@ function Home () {
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </div> */}
                         {/* <div className="experience-block">
                             <a href = "https://linktr.ee/theminuniform?fbclid=PAZXh0bgNhZW0CMTEAAaamh7_9T1gUZtlxUKGm7omEuK8K_u2xVnAHnDUTaM0Q5rzWoJ9spgUNqEY_aem_oFFukku4fEAq4lL-YVuECQ" target="_blank">
                                 <div className="exp-div">
