@@ -412,7 +412,7 @@ function Home () {
                                                 </div>
                                                 <h5>Mobile Developer</h5>
                                             </div>
-                                        <p>Involved in the design and implementation of features for a startup IOS app aimed to connect long distance friends. Contributed 10-15 hours per week to the project in XCode, utilizing Swift for front-end development and MongoDB Realm for back-end data management, in order to prepare a minimum viable product (MVP) for pitch competitions.</p>
+                                        <p>Involved in the design and implementation of features for a startup IOS app aimed to connect long distance friends. Contributed 10-15 hours per week to the project in XCode, utilizing Swift UIKit for front-end development and MongoDB Realm for back-end data management, in order to prepare a minimum viable product (MVP) for pitch competitions. Utilized the CoreGraphics and CoreAnimation frameworks to create a more dynamic and engaging user interface.</p>
                                         <div className="edu-bubble">
                                             <p>Swift</p>
                                             <p>MongoDB</p>
